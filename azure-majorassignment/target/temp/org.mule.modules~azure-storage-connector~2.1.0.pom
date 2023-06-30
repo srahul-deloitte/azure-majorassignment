@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.mule.modules</groupId>
+	<artifactId>azure-storage-connector</artifactId>
+	<version>2.1.0</version>
+
+	<packaging>mule-extension</packaging>
+	<name>Mule Azure Storage Anypoint Connector - Mule 4</name>
+
+	<parent>
+		<groupId>org.mule.connectors</groupId>
+		<artifactId>mule-certified-parent</artifactId>
+		<version>1.4.1</version>
+	</parent>
+
+	<properties>
+		<category>Certified</category>
+		<licensePath>LICENSE.md</licensePath>
+	</properties>
+
+	 <repositories>
+		<repository>
+			<id>mule-releases</id>
+			<name>Nexus Public Releases</name>
+			<url>https://repository-master.mulesoft.org/nexus/content/repositories/releases/</url>
+		</repository>
+	</repositories>   
+
+	<dependencies>
+		<dependency>
+			<groupId>com.microsoft.azure</groupId>
+			<artifactId>azure-storage</artifactId>
+			<version>8.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>24.1.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.runtime</groupId>
+			<artifactId>mule-metadata-model-json</artifactId>
+			<version>1.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.runtime</groupId>
+			<artifactId>mule-core</artifactId>
+			<version>4.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.tests</groupId>
+			<artifactId>mule-tests-functional</artifactId>
+			<version>4.1.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
+	</dependencies>
+
+	<scm>
+		<connection>scm:git:git@github.com:WHISHWORKS/azure-storage-connector.git</connection>
+		<developerConnection>scm:git:git@github.com:WHISHWORKS/azure-storage-connector.git</developerConnection>
+		<url>https://github.com/WHISHWORKS/azure-storage-connector</url>
+		<tag>azure-storage-connector-2.1.0</tag>
+	</scm>
+</project>
